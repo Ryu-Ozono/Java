@@ -8,7 +8,7 @@ public class Senha{
             tentativa= 1234;
             System.out.println("Acesso negado");
 
-            if (tentativa = senha);
+            if (tentativa == senha);
                 System.out.println("Tentando acessar...");
         }
         System.out.println("Acesso liberado");
