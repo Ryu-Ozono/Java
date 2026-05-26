@@ -1,20 +1,19 @@
 package Concessionária;
 
-import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Main {
 
 public static void main(String[] args) {
+    SistemaConcessionária s = new SistemaConcessionária();
             int opcao;
             do {
-                opcao = menu();
+                opcao = s.menu();
                 switch (opcao) {
                     case 1:
-                        SistemaConcessionaria.cadastrarVeiculos();
+                        SistemaConcessionária.cadastrarVeículos();
                         break;
                     case 2:
-                        SistemaConcessionaria.listarVeiculos();
+                        SistemaConcessionária.listarVeículos();
                         break;
                     case 3:
                         System.out.println("Saindo do Sistema...");
@@ -24,7 +23,7 @@ public static void main(String[] args) {
                         break;
                 }
             } while (opcao != 3);
-            SistemaConcessionaria.sc.close();
+            SistemaConcessionária.sc.close();
         }
 
     
@@ -35,6 +34,6 @@ public static void main(String[] args) {
             System.out.println("2 - Lista de Veículos");
             System.out.println("3 - Sair");
             System.out.println("Escolha uma opção");
-            return SistemaConcessionaria.sc.nextInt();
+            return SistemaConcessionária.sc.nextInt();
         }
     }

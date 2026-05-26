@@ -32,7 +32,7 @@ public class SistemaConcessionária {
     }
      
     public static void listarVeículos() {
-        if (listarVeículos.isEmpty()) {
+        if (listarVeiculos.isEmpty()) {
             System.out.println("Nenhum produto cadastrado.");
             return;
         }
